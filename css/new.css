@@ -1,0 +1,40 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+@keyframes particle-animation{
+	100%
+	{
+		transform: 
+		translate3d((random(90)*1vw),(random(90)*1vw),(random(100)*1px));
+
+	}
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/new.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.particle{
+  
+  position: absolute;
+  border-radius: 1000%
+  animation: particle-animation 5s-infinte;
+  $size: random(5)+5+px;
+  $width:$size;
+  $height: $size;
+  background:hsl(random(360),70%,50%);
+  transform:
+  translate3d((random(90)*1vw),(random(90)*1vw),(random(100)*1px));
+}
